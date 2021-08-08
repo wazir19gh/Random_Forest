@@ -23,8 +23,9 @@ class Random_Forest_Regressor:
         # Selecting the remaining 40% from the above 60% of the indices
         repeated_rows = list(np.random.choice(np.array(selected_rows), size = len(self.x)-len(selected_rows)))
         
-        # Selecting the column indices anywhere between 3 and 13
+        
         if self.col_samp:
+            # Selecting the column indices anywhere between 3 and the number of features in the dataset
             selected_columns = list(np.random.choice(np.arange(self.x.shape[1]), size = np.random.choice(np.arange(3,self.x.shape[1])), replace = False))
         
             # Selecting the non-repeating data from the original data
