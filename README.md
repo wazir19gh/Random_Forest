@@ -8,3 +8,6 @@ The .py file is named as RF_rgsr.py which consists of the following:-
 2) Method bootstrapping which would create a bootstrap sample by sampling with replacement along with column sampling with 3 to total number of columns if the user requires.
 3) Method train which would train n decision trees, would determine the training mse and would print it.
 4) Method oob_score whoch would get the oob samples and would get the oob score or mse on those samples.
+5) Method rf_predict which would take one query point as input and would return the prediction on the trained Random Forest Regressor.
+
+Please import this rf_rgsr.py file in any program and create an instance of the class Random_Forest_Regressor and call the methods defined in the classes to train the Random_Forest_Regressor and get the oob_score.
